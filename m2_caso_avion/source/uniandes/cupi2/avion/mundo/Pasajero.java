@@ -11,6 +11,8 @@
  */
 package uniandes.cupi2.avion.mundo;
 
+import java.util.ArrayList;
+
 /**
  * Pasajero del avión
  */
@@ -24,10 +26,17 @@ public class Pasajero
      * Cédula del pasajero
      */
     private int cedula;
+    
     /**
      * Nombre del pasajero
      */
     private String nombre;
+    
+    /**
+     * Lista de películas del pasajero.
+     */
+    //TODO Declare el atributo
+    
 
     //-----------------------------------------------------------------
     // Constructores
@@ -43,6 +52,8 @@ public class Pasajero
     {
         cedula = unaCedula;
         nombre = unNombre;
+        
+        //TODO Inicialice la lista de películas.
     }
 
     //-----------------------------------------------------------------
@@ -79,4 +90,58 @@ public class Pasajero
         else
             return false;
     }
+    
+    /**
+     * Devuelve la lista de películas del pasajero.
+     * @return Lista de películas del pasajero.
+     */
+    public ArrayList darPeliculas()
+    {
+    	//TODO Implemente el método según la documentación.
+    }
+    
+    /**
+     * Agrega una película a la lista.
+     * @param nombre Nombre de la película. nombre !="" && nombre !=null.
+     * @param genero Género de la película. genero !="" && genero !=null.
+     * @param duracion Duración en minutos de la película. duracion > 0.
+     * @param director Director de la película. director != null && director !="".
+     */
+    public void agregarPelicula(String nombre, String genero, int duracion, String director)
+    {
+    	//TODO Implemente el método según la documentación.
+    }
+    
+    /**
+     * Devuelve la duración total de las películas programadas por el pasajero.
+     * @return Suma de la duración de cada una de las películas del pasajero.
+     */
+    public int darDuracionTotalPeliculas()
+    {
+    	//TODO Implemente el método según la documentación.
+    }
+    
+    /**
+     * Devuelve una lista de las películas que pertenecen a un género determinado por parámetro. 
+     * @param genero Género al que pertencen las películas.
+     * @return Lista de las películas que pertenecen al género.
+     */
+    public ArrayList darPeliculasGenero(String genero)
+    {
+    	//TODO Implemente el método según la documentación.
+    }
+    
+    /**
+     * Determina si hay dos películas que tengan la misma duración.
+     * @return True si hay dos películas con la misma duración, false de lo contrario.
+     */
+    public boolean tienePeliculasMismaDuracion()
+    {
+    	//TODO Implemente el método según la documentación.
+    	
+    }
+    
+    
+    
+    
 }

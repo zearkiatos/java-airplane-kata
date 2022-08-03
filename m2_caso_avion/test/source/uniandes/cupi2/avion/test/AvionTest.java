@@ -14,6 +14,7 @@ package uniandes.cupi2.avion.test;
 import junit.framework.TestCase;
 import uniandes.cupi2.avion.mundo.Avion;
 import uniandes.cupi2.avion.mundo.Pasajero;
+import uniandes.cupi2.avion.mundo.Pelicula;
 import uniandes.cupi2.avion.mundo.Silla;
 
 /**
@@ -85,6 +86,12 @@ public class AvionTest extends TestCase
         //Crea los pasajeros
         p1 = new Pasajero( cedula1, nombre1 );
         p2 = new Pasajero( cedula2, nombre2 );
+        p1.agregarPelicula("p1", Pelicula.ACCION, 111, "d1");
+    	p1.agregarPelicula("p2", Pelicula.COMEDIA, 222, "d2");
+    	p1.agregarPelicula("p3", Pelicula.DRAMA, 333, "d3");
+    	p2.agregarPelicula("p4", Pelicula.ROMANCE, 444, "d4");
+    	p2.agregarPelicula("p5", Pelicula.ACCION, 555, "d5");
+    	p2.agregarPelicula("p6", Pelicula.COMEDIA, 111, "d6");
 
         //Asigna el primer pasajero en una silla ejecutiva de la ventana
         avion.asignarSilla( Silla.CLASE_EJECUTIVA, Silla.VENTANA, p1 );
@@ -388,6 +395,15 @@ public class AvionTest extends TestCase
             assertTrue( true );
         else
             fail( "El pasajero no debería estar" );
+    }
+    
+    /**
+     * Verifica que el método darDuracionTotalPeliculas está correctamente implementado.
+     */
+    public void testDarDuracionTotalPeliculas()
+    {
+    	setupEscenario1();
+    	assertEquals("La duración debería ser 1776 minutos.", 1776, avion.darDuracionTotalPeliculas());
     }
 
 }

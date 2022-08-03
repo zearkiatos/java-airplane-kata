@@ -309,6 +309,17 @@ public class Avion
     }
 
     /**
+     * Retorna la duración total de todas las peliculas de todos los pasajeros.
+     * Tiene en cuenta tanto sillas económicas como sillas ejecutivas.
+     * @return Duración total en minutos de todas las peliculas.
+     */
+    public int darDuracionTotalPeliculas()
+    {
+    	//TODO Implemente el método según la documentación.
+    }
+    
+    
+    /**
      * Método 1 de extensión al ejemplo
      * @return respuesta
      */

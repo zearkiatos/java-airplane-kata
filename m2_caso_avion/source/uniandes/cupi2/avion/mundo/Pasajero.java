@@ -1,11 +1,11 @@
 /**~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  * $Id$
- * Universidad de los Andes (Bogotá - Colombia)
- * Departamento de Ingeniería de Sistemas y Computación
+ * Universidad de los Andes (Bogotï¿½ - Colombia)
+ * Departamento de Ingenierï¿½a de Sistemas y Computaciï¿½n
  * Licenciado bajo el esquema Academic Free License version 2.1
  *
  * Proyecto Cupi2
- * Ejercicio: Avión
+ * Ejercicio: Aviï¿½n
  * Autor: Katalina Marcos - Febrero 2005
  * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  */
@@ -14,7 +14,7 @@ package uniandes.cupi2.avion.mundo;
 import java.util.ArrayList;
 
 /**
- * Pasajero del avión
+ * Pasajero del aviï¿½n
  */
 public class Pasajero
 {
@@ -23,7 +23,7 @@ public class Pasajero
     // Atributos
     //-----------------------------------------------------------------
     /**
-     * Cédula del pasajero
+     * Cï¿½dula del pasajero
      */
     private int cedula;
     
@@ -33,7 +33,7 @@ public class Pasajero
     private String nombre;
     
     /**
-     * Lista de películas del pasajero.
+     * Lista de pelï¿½culas del pasajero.
      */
     //TODO Declare el atributo
     
@@ -43,9 +43,9 @@ public class Pasajero
     //-----------------------------------------------------------------
 
     /**
-     * Crea a un pasajero con su cédula y nombre <br>
-     * <b>post: </b>El pasajero tiene sus datos básicos cédula y nombre asignados.
-     * @param unaCedula - cédula del pasajero - unaCedula >0
+     * Crea a un pasajero con su cï¿½dula y nombre <br>
+     * <b>post: </b>El pasajero tiene sus datos bï¿½sicos cï¿½dula y nombre asignados.
+     * @param unaCedula - cï¿½dula del pasajero - unaCedula >0
      * @param unNombre - nombre del pasajero - unNombre != ""
      */
     public Pasajero( int unaCedula, String unNombre )
@@ -53,15 +53,15 @@ public class Pasajero
         cedula = unaCedula;
         nombre = unNombre;
         
-        //TODO Inicialice la lista de películas.
+        //TODO Inicialice la lista de pelï¿½culas.
     }
 
     //-----------------------------------------------------------------
-    // Métodos
+    // Mï¿½todos
     //-----------------------------------------------------------------
 
     /**
-     * Retorna la cédula del pasajero
+     * Retorna la cï¿½dula del pasajero
      * @return cedula del pasajero
      */
     public int darCedula( )
@@ -92,52 +92,52 @@ public class Pasajero
     }
     
     /**
-     * Devuelve la lista de películas del pasajero.
-     * @return Lista de películas del pasajero.
+     * Devuelve la lista de pelï¿½culas del pasajero.
+     * @return Lista de pelï¿½culas del pasajero.
      */
     public ArrayList darPeliculas()
     {
-    	//TODO Implemente el método según la documentación.
+    	//TODO Implemente el mï¿½todo segï¿½n la documentaciï¿½n.
     }
     
     /**
-     * Agrega una película a la lista.
-     * @param nombre Nombre de la película. nombre !="" && nombre !=null.
-     * @param genero Género de la película. genero !="" && genero !=null.
-     * @param duracion Duración en minutos de la película. duracion > 0.
-     * @param director Director de la película. director != null && director !="".
+     * Agrega una pelï¿½cula a la lista.
+     * @param nombre Nombre de la pelï¿½cula. nombre !="" && nombre !=null.
+     * @param genero Gï¿½nero de la pelï¿½cula. genero !="" && genero !=null.
+     * @param duracion Duraciï¿½n en minutos de la pelï¿½cula. duracion > 0.
+     * @param director Director de la pelï¿½cula. director != null && director !="".
      */
     public void agregarPelicula(String nombre, String genero, int duracion, String director)
     {
-    	//TODO Implemente el método según la documentación.
+    	//TODO Implemente el mï¿½todo segï¿½n la documentaciï¿½n.
     }
     
     /**
-     * Devuelve la duración total de las películas programadas por el pasajero.
-     * @return Suma de la duración de cada una de las películas del pasajero.
+     * Devuelve la duraciï¿½n total de las pelï¿½culas programadas por el pasajero.
+     * @return Suma de la duraciï¿½n de cada una de las pelï¿½culas del pasajero.
      */
     public int darDuracionTotalPeliculas()
     {
-    	//TODO Implemente el método según la documentación.
+    	//TODO Implemente el mï¿½todo segï¿½n la documentaciï¿½n.
     }
     
     /**
-     * Devuelve una lista de las películas que pertenecen a un género determinado por parámetro. 
-     * @param genero Género al que pertencen las películas.
-     * @return Lista de las películas que pertenecen al género.
+     * Devuelve una lista de las pelï¿½culas que pertenecen a un gï¿½nero determinado por parï¿½metro. 
+     * @param genero Gï¿½nero al que pertencen las pelï¿½culas.
+     * @return Lista de las pelï¿½culas que pertenecen al gï¿½nero.
      */
     public ArrayList darPeliculasGenero(String genero)
     {
-    	//TODO Implemente el método según la documentación.
+    	//TODO Implemente el mï¿½todo segï¿½n la documentaciï¿½n.
     }
     
     /**
-     * Determina si hay dos películas que tengan la misma duración.
-     * @return True si hay dos películas con la misma duración, false de lo contrario.
+     * Determina si hay dos pelï¿½culas que tengan la misma duraciï¿½n.
+     * @return True si hay dos pelï¿½culas con la misma duraciï¿½n, false de lo contrario.
      */
     public boolean tienePeliculasMismaDuracion()
     {
-    	//TODO Implemente el método según la documentación.
+    	//TODO Implemente el mï¿½todo segï¿½n la documentaciï¿½n.
     	
     }
     

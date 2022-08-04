@@ -2,6 +2,11 @@ package uniandes.cupi2.avion.mundo;
 
 public class Pelicula {
     public final static String ACCION = "accion";
+    public final static String COMEDIA = "comedia";
+    public final static String DRAMA = "drama";
+    public final static String INFANTIL = "infantil";
+    public final static String ROMANCE = "romance";
+
     private String nombre;
 
     private String genero;

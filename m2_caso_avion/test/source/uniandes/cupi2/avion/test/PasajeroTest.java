@@ -7,7 +7,7 @@ import uniandes.cupi2.avion.mundo.Pelicula;
 import junit.framework.TestCase;
 
 /**
- * Esta es la clase usada para verificar que los métodos de la clase Pasajero estén correctamente implementados.
+ * Esta es la clase usada para verificar que los mï¿½todos de la clase Pasajero estï¿½n correctamente implementados.
  */
 public class PasajeroTest extends TestCase
 {
@@ -21,11 +21,11 @@ public class PasajeroTest extends TestCase
     private Pasajero pasajero;
 
     // -----------------------------------------------------------------
-    // Métodos
+    // Mï¿½todos
     // -----------------------------------------------------------------
     
     /**
-     * Escenario 1: Crea un pasajero sin películas.
+     * Escenario 1: Crea un pasajero sin pelï¿½culas.
      */
     private void setupEscenario1()
     {
@@ -33,7 +33,7 @@ public class PasajeroTest extends TestCase
     }
     
     /**
-     * Escenario 2: Crea un pasajero con películas.
+     * Escenario 2: Crea un pasajero con pelï¿½culas.
      */
     private void setupEscenario2()
     {
@@ -47,7 +47,7 @@ public class PasajeroTest extends TestCase
     }
     
     /**
-     * Escenario 3: Crea un pasajero con películas.
+     * Escenario 3: Crea un pasajero con pelï¿½culas.
      */
     private void setupEscenario3()
     {
@@ -60,69 +60,69 @@ public class PasajeroTest extends TestCase
     }
     
     /**
-     * Prueba 1: Verifica que el pasajero sea creado correctamente, creando la lista de películas vacía.
+     * Prueba 1: Verifica que el pasajero sea creado correctamente, creando la lista de pelï¿½culas vacï¿½a.
      */
     public void testCrearPasajero()
     {
     	setupEscenario1();
-    	assertEquals("El nombre debería ser Radamel Falcao.", "Radamel Falcao", pasajero.darNombre());
-    	assertEquals("La cédula debería ser 123456.", 123456 , pasajero.darCedula());
-    	assertNotNull("No debería ser nulo.", pasajero.darPeliculas());
-    	assertEquals("La lista no debería tener nada.", 0, pasajero.darPeliculas().size());
+    	assertEquals("El nombre deberï¿½a ser Radamel Falcao.", "Radamel Falcao", pasajero.darNombre());
+    	assertEquals("La cï¿½dula deberï¿½a ser 123456.", 123456 , pasajero.darCedula());
+    	assertNotNull("No deberï¿½a ser nulo.", pasajero.darPeliculas());
+    	assertEquals("La lista no deberï¿½a tener nada.", 0, pasajero.darPeliculas().size());
     }
     
     /**
-     * Prueba 2: Verifica que el pasajero  aumenta en 1 al agregar una película.
+     * Prueba 2: Verifica que el pasajero  aumenta en 1 al agregar una pelï¿½cula.
      */
     public void testAgregarPelicula()
     {
     	setupEscenario1();
-    	assertEquals("La lista no debería tener nada.", 0, pasajero.darPeliculas().size());
+    	assertEquals("La lista no deberï¿½a tener nada.", 0, pasajero.darPeliculas().size());
     	pasajero.agregarPelicula("p1", Pelicula.ACCION, 111, "d1");
-    	assertEquals("La lista debería ser tamaño 1.", 1, pasajero.darPeliculas().size());
+    	assertEquals("La lista deberï¿½a ser tamaï¿½o 1.", 1, pasajero.darPeliculas().size());
     }
     
     /**
-     * Prueba 3: Verifica que el método darDuracionTotalPeliculas está correctamente implementado.
+     * Prueba 3: Verifica que el mï¿½todo darDuracionTotalPeliculas estï¿½ correctamente implementado.
      */
     public void testDarDuracionTotalPeliculas()
     {
     	setupEscenario1();
-    	assertEquals("La duración debería ser 0 minutos.", 0, pasajero.darDuracionTotalPeliculas());
+    	assertEquals("La duraciï¿½n deberï¿½a ser 0 minutos.", 0, pasajero.darDuracionTotalPeliculas());
     	
     	setupEscenario2();
-    	assertEquals("La duración debería ser 1776 minutos.", 1776, pasajero.darDuracionTotalPeliculas());
+    	assertEquals("La duraciï¿½n deberï¿½a ser 1776 minutos.", 1776, pasajero.darDuracionTotalPeliculas());
     }
     
     /**
-     * Prueba 4: Verifica que el método darPeliculasGenero está correctamente implementado.
+     * Prueba 4: Verifica que el mï¿½todo darPeliculasGenero estï¿½ correctamente implementado.
      */
     public void testDarPeliculasGenero()
     {
     	setupEscenario2();
-    	ArrayList lista = pasajero.darPeliculasGenero(Pelicula.ACCION);
-    	ArrayList lista2 = pasajero.darPeliculasGenero(Pelicula.COMEDIA);
-    	ArrayList lista3 = pasajero.darPeliculasGenero(Pelicula.DRAMA);
-    	ArrayList lista4 = pasajero.darPeliculasGenero(Pelicula.INFANTIL);
-    	ArrayList lista5 = pasajero.darPeliculasGenero(Pelicula.ROMANCE);
+    	ArrayList<Pelicula> lista = pasajero.darPeliculasGenero(Pelicula.ACCION);
+    	ArrayList<Pelicula> lista2 = pasajero.darPeliculasGenero(Pelicula.COMEDIA);
+    	ArrayList<Pelicula> lista3 = pasajero.darPeliculasGenero(Pelicula.DRAMA);
+    	ArrayList<Pelicula> lista4 = pasajero.darPeliculasGenero(Pelicula.INFANTIL);
+    	ArrayList<Pelicula> lista5 = pasajero.darPeliculasGenero(Pelicula.ROMANCE);
     	
-    	assertEquals("El tamaño de la lista debería ser 2.", 2, lista.size());
-    	assertEquals("El tamaño de la lista debería ser 2.", 2, lista2.size());
-    	assertEquals("El tamaño de la lista debería ser 1.", 1, lista3.size());
-    	assertEquals("El tamaño de la lista debería ser 0.", 0, lista4.size());
-    	assertEquals("El tamaño de la lista debería ser 1.", 1, lista5.size());
+    	assertEquals("El tamaï¿½o de la lista deberï¿½a ser 2.", 2, lista.size());
+    	assertEquals("El tamaï¿½o de la lista deberï¿½a ser 2.", 2, lista2.size());
+    	assertEquals("El tamaï¿½o de la lista deberï¿½a ser 1.", 1, lista3.size());
+    	assertEquals("El tamaï¿½o de la lista deberï¿½a ser 0.", 0, lista4.size());
+    	assertEquals("El tamaï¿½o de la lista deberï¿½a ser 1.", 1, lista5.size());
     }
     
     /**
-     * Prueba 5: Verifica que el método tienePeliculasMismaDuracion esté correctamente implementado.
+     * Prueba 5: Verifica que el mï¿½todo tienePeliculasMismaDuracion estï¿½ correctamente implementado.
      */
     public void testTienePeliculasMismaDuracion()
     {
     	setupEscenario2();
-    	assertTrue("Debería ser verdadero.", pasajero.tienePeliculasMismaDuracion());
+    	assertTrue("Deberï¿½a ser verdadero.", pasajero.tienePeliculasMismaDuracion());
     	
     	setupEscenario3();
-    	assertFalse("Debería ser falso.", pasajero.tienePeliculasMismaDuracion());
+    	assertFalse("Deberï¿½a ser falso.", pasajero.tienePeliculasMismaDuracion());
     }
     
     

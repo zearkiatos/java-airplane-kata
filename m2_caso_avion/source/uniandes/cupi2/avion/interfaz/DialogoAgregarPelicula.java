@@ -81,7 +81,7 @@ public class DialogoAgregarPelicula extends JDialog implements ActionListener
     /**
      * Texto duraci�n.
      */
-    private JTextField textoDuraci�n;
+    private JTextField textoDuracion;
 
     /**
      * Texto director.
@@ -181,7 +181,7 @@ public class DialogoAgregarPelicula extends JDialog implements ActionListener
             try
             {
             	int cedula = Integer.parseInt(textoCedulaPasajero.getText());
-                int duracion = Integer.parseInt( textoDuraci�n.getText());
+                int duracion = Integer.parseInt( textoDuracion.getText());
                 String nombre = textoNombre.getText();
                 String genero = (String) comboGenero.getSelectedItem();
                 String director = textoDirector.getText();
